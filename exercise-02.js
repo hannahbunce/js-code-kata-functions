@@ -16,9 +16,9 @@ let names = people.map(person => person.name)
 
 function run() {
   // replace these with calls to showRelation
-  console.log('>', anna.name, 'is', relation, 'with', carrie.name)
-  console.log('>', beata.name, 'is', relation, 'with', carrie.name)
-  console.log('>', carrie.name, 'is', relation, 'with', beata.name)
+  console.log('>', anna.name, 'is', 'friends', 'with', carrie.name)
+  console.log('>', beata.name, 'is', 'co-workers', 'with', carrie.name)
+  console.log('>', carrie.name, 'is', 'family', 'with', beata.name)
 
   console.log('I know the names of', names)
 }
