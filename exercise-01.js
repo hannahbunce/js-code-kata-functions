@@ -20,4 +20,4 @@ function run() {
   console.log('I know the names of', names)
 }
 
-console.log('Edit this file to call the run function') // and remove this line
+run(people.map);
