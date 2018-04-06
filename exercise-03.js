@@ -15,15 +15,23 @@ let names = people.map(person => person.name)
 
 
 function run() {
-  showRelation(name1, 'friends', name3)
-  showRelation(name2, 'co-workers', name1)
-  showRelation(name3, 'family', name2)
+  showRelation('Anna', 'friends', 'Carrie')
+  showRelation('Beata', 'co-workers', 'Anna')
+  showRelation('Carrie', 'family', 'Beata')
+
+  showAge(anna.name, anna.age)
+  showAge(beata.name, beata.age)
+  showAge(carrie.name, carrie.age)
 
   console.log('I know the names of', names)
 }
 
 function showRelation(n1, n2, relation) {
   console.log('>', n1, 'is', relation, 'with', n2)
+}
+
+function showAge(name, age) {
+  console.log('>', name, " is", age);
 }
 
 run()
